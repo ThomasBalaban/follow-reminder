@@ -1,0 +1,48 @@
+@keyframes grow {
+    0% {
+        left: -400px;
+        transform: scale(1) translateY(0);
+    }
+
+    60% {
+        left: 0;
+        transform: scale(1) translateY(0);
+    }
+
+    70% {
+        left: -30px;
+        transform: scale(1.1,.9) translateY(0);
+    }
+
+    80% {
+        left: 0;
+        transform: scale(1) translateY(0);
+    }
+
+    90% {
+        left: -10px;
+        transform: scale(1.1,.9) translateY(0);
+    }
+
+    100% {
+        left: 0;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.test {
+    position: relative;
+    display: none;
+    left: 0;
+    width: 400px;
+    height: 200px;
+    background: red;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-name: grow;
+
+
+    &.on {
+        display: block;
+    }
+}
